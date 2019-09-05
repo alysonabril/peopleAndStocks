@@ -119,8 +119,8 @@
 		C6A5C344232156F400554B83 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				C6A5C342232156BA00554B83 /* stocks.json */,
 				C6A5C3452321570500554B83 /* people.json */,
+				C6A5C342232156BA00554B83 /* stocks.json */,
 			);
 			path = json;
 			sourceTree = "<group>";
