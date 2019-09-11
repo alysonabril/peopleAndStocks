@@ -15,10 +15,11 @@
 		C6371B7C23214FD8002F9160 /* PeopleDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6371B7B23214FD8002F9160 /* PeopleDVC.swift */; };
 		C6371B7E23214FE9002F9160 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6371B7D23214FE9002F9160 /* StocksViewController.swift */; };
 		C6371B802321500B002F9160 /* StocksDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6371B7F2321500B002F9160 /* StocksDVC.swift */; };
-		C6371B83232150DD002F9160 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6371B82232150DD002F9160 /* People.swift */; };
+		C6371B83232150DD002F9160 /* PeopleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6371B82232150DD002F9160 /* PeopleInfo.swift */; };
 		C6371B85232150E7002F9160 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6371B84232150E7002F9160 /* Stocks.swift */; };
 		C6A5C343232156BA00554B83 /* stocks.json in Resources */ = {isa = PBXBuildFile; fileRef = C6A5C342232156BA00554B83 /* stocks.json */; };
 		C6A5C3462321570500554B83 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C6A5C3452321570500554B83 /* people.json */; };
+		C6A5C348232190E700554B83 /* appError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5C347232190E700554B83 /* appError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +33,11 @@
 		C6371B7B23214FD8002F9160 /* PeopleDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDVC.swift; sourceTree = "<group>"; };
 		C6371B7D23214FE9002F9160 /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
 		C6371B7F2321500B002F9160 /* StocksDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksDVC.swift; sourceTree = "<group>"; };
-		C6371B82232150DD002F9160 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		C6371B82232150DD002F9160 /* PeopleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfo.swift; sourceTree = "<group>"; };
 		C6371B84232150E7002F9160 /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		C6A5C342232156BA00554B83 /* stocks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stocks.json; sourceTree = "<group>"; };
 		C6A5C3452321570500554B83 /* people.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
+		C6A5C347232190E700554B83 /* appError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +82,8 @@
 		C6371B812321501A002F9160 /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				C6371B6B23214E5D002F9160 /* PeopleViewController.swift */,
-				C6371B7B23214FD8002F9160 /* PeopleDVC.swift */,
-				C6371B7D23214FE9002F9160 /* StocksViewController.swift */,
-				C6371B7F2321500B002F9160 /* StocksDVC.swift */,
+				C68BFF762326B23700EDF6C8 /* People */,
+				C68BFF772326B24600EDF6C8 /* Stocks */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -91,7 +91,7 @@
 		C6371B86232150EF002F9160 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C6371B82232150DD002F9160 /* People.swift */,
+				C6371B82232150DD002F9160 /* PeopleInfo.swift */,
 				C6371B84232150E7002F9160 /* Stocks.swift */,
 			);
 			path = Model;
@@ -105,9 +105,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C68BFF762326B23700EDF6C8 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				C6371B6B23214E5D002F9160 /* PeopleViewController.swift */,
+				C6371B7B23214FD8002F9160 /* PeopleDVC.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		C68BFF772326B24600EDF6C8 /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				C6371B7D23214FE9002F9160 /* StocksViewController.swift */,
+				C6371B7F2321500B002F9160 /* StocksDVC.swift */,
+			);
+			path = Stocks;
+			sourceTree = "<group>";
+		};
 		C6A5C341232154F500554B83 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				C6A5C349232190EB00554B83 /* helpers */,
 				C6A5C344232156F400554B83 /* json */,
 				C6371B7023214E61002F9160 /* Assets.xcassets */,
 				C6371B6923214E5D002F9160 /* AppDelegate.swift */,
@@ -123,6 +142,14 @@
 				C6A5C342232156BA00554B83 /* stocks.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		C6A5C349232190EB00554B83 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C6A5C347232190E700554B83 /* appError.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +229,9 @@
 				C6371B6C23214E5D002F9160 /* PeopleViewController.swift in Sources */,
 				C6371B85232150E7002F9160 /* Stocks.swift in Sources */,
 				C6371B802321500B002F9160 /* StocksDVC.swift in Sources */,
+				C6A5C348232190E700554B83 /* appError.swift in Sources */,
 				C6371B6A23214E5D002F9160 /* AppDelegate.swift in Sources */,
-				C6371B83232150DD002F9160 /* People.swift in Sources */,
+				C6371B83232150DD002F9160 /* PeopleInfo.swift in Sources */,
 				C6371B7E23214FE9002F9160 /* StocksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
